@@ -1,12 +1,10 @@
-// TODO: Include packages needed for this application
+
 const inquirer = require("inquirer");
 const generateMarkdown = require('./utils/generateMarkdown');
-
-// File system module (node package manager) import
 const fs = require("fs");
-// TODO: Create an array of questions for user input
 
 
+//Prompt the user for information about the project
 const questions = [{
          type: 'input',
          message: 'README GENERATOR ------ What is your name?',
@@ -67,22 +65,7 @@ const questions = [{
 
 
 ];
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     try {
-//         fs.writeFileSync(fileName, data);
-//         console.log(`Successfully wrote to ${fileName}`);
-//     } catch (error) {
-//         console.error(`Error writing to file: ${error.message}`);
-//     }
-// }
-//
-// // TODO: Create a function to initialize app
-// function init() {}
-//
-// // Function call to initialize app
-// init();
+//Function to write readme file
 const writeToFile = data => {
     return new Promise((resolve, reject) => {
 
@@ -120,43 +103,3 @@ init()
     })
 
 
-////////////////////////////////////
-// Function to write README file
-
-
-// const writeToFile = data => {
-//     return new Promise((resolve, reject) => {
-//         // make a readme file and add to dist folder
-//         fs.writeFile('SAMPLE-README.md', data, err => {
-//             // if there's an error, reject the Promise and send the error to .catch() method
-//             if (err) {
-//                 reject(err);
-//                 // return out of the function here to make sure the Promise doesn't continut to execute the resolve() function
-//                 return;
-//             }
-//             // if everything went well, resolve the Promise and send the successful data to the .then() method
-//             resolve({
-//                 ok: true,
-//                 message: console.log('SAMPLE-README.md Generated.')
-//             });
-//
-//         })
-//     })
-// }
-
-// Initialize app
-// const init = () => {
-//     return inquirer.prompt(questions);
-// }
-
-// // Function call to initialize app
-// init()
-//     .then(userInput => {
-//         return generateMarkdown(userInput);
-//     })
-//     .then(readmeInfo => {
-//         return writeToFile(readmeInfo);
-//     })
-//     .catch(err => {
-//         console.log(err);
-//     })
