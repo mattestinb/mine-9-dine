@@ -69,7 +69,7 @@ const questions = [{
 const writeToFile = data => {
     return new Promise((resolve, reject) => {
 
-        fs.writeFile('NEW-README.md', data, err => {
+        fs.writeFile('GEN-README.md', data, err => {
 
             if (err) {
                 reject(err);
@@ -78,7 +78,7 @@ const writeToFile = data => {
 
             resolve({
                 ok: true,
-                message: console.log('NEW-README.md Generated.')
+                message: console.log('NEW README.md Generated.')
             });
 
         })
