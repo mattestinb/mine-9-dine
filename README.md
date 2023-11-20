@@ -11,6 +11,8 @@
 ## Description
 
 The project `"ReadMeGen"` is centered around the creation of an automated README file generator. This tool is designed to streamline the process of creating comprehensive and professional README files for software projects. ReadMeGen caters to developers who want to save time and effort in documenting their projects while maintaining a high standard of clarity and detail in their READMEs.
+![Project Image](https://github.com/mattestinb/mine-9-dine/blob/main/p9img.png)
+
 
 ### Key Features:
 
