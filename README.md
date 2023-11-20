@@ -29,6 +29,7 @@ This repository is licensed with [MIT](https://opensource.org/licenses/MIT).
 
 ## Video  
 [View Demo](https://drive.google.com/file/d/1mZDntai4ug0AXXQNhGqjkoaaabzrLOb9/view?usp=drive_link)
+[View Live Link](https://mattestinb.github.io/mine-9-dine)
 
 ## Questions 
 If you have any questions, contact me at [mattestin@gmail.com](mailto:mattestin@gmail.com)
